@@ -1,14 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        config {
-            keyAlias 'kunalgharate'
-            keyPassword 'Kun@l@123'
-            storeFile file('F:/AdMob/weedon/weedon_key.jks')
-            storePassword '9766439301'
         }
-    }
     compileSdkVersion 27
     buildToolsVersion "27.0.3"
     defaultConfig {
