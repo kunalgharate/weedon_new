@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/main_all_btn"
+        android:title="All Services" />
+
+    <item
+        android:id="@+id/share_btn"
+        android:title="Share" />
+
+    <item
+        android:id="@+id/terms_btn"
+        android:title="Terms of Service" />
+    <item
+        android:id="@+id/btn_Policy"
+        android:title="Privacy Policy" />
+    <item
+        android:id="@+id/main_logout_btn"
+        android:title="Logout" />
+</menu>

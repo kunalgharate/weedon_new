@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="false"
+    tools:context="info.mores.weedon.ImageActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/image_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="24dp"
+        app:theme="@style/ToolbarStyle"
+        android:elevation="1dp" />
+
+
+    <!--   <ImageView
+           android:id="@+id/imageSet"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:transitionName="thumbnailTransition"
+           android:layout_below="@+id/image_appbar"
+           android:layout_gravity="center"
+           android:scaleType="fitCenter" />
+   -->
+
+    <com.jsibbold.zoomage.ZoomageView
+        android:background="@drawable/actionbar_bg"
+        android:id="@+id/imageSet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:zoomage_restrictBounds="false"
+        app:zoomage_animateOnReset="true"
+        app:zoomage_autoResetMode="UNDER"
+        app:zoomage_autoCenter="true"
+        app:zoomage_zoomable="true"
+        app:zoomage_translatable="true"
+        app:zoomage_minScale="0.6"
+        app:zoomage_maxScale="8"
+        />
+</android.support.design.widget.CoordinatorLayout>

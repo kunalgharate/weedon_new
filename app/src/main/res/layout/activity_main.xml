@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/main_page_toolbar"
+        layout="@layout/app_bar_layout" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/subscribes_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/main_page_toolbar"
+        android:layout_above="@id/adView"
+        android:clickable="true"
+        android:transcriptMode="normal" android:focusable="true">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/mEmptyListMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/main_page_toolbar"
+        android:gravity="center"
+        android:text="@string/choose_your_favourite_service_to_get_updates_click_on_sign_for_subscribe_the_service"
+        android:textColor="@color/colorBtnBgGrey"
+        android:textSize="20sp" />
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-0125456543345927/7199479509"/>
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/add_service"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:fabSize="normal" android:layout_alignParentEnd="true" android:layout_marginEnd="15dp"/>
+
+</RelativeLayout>
+
+

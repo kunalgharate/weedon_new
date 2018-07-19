@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0ca3ef</color>
+    <color name="colorPrimaryDark">#07a3f2</color>
+    <color name="colorAccent">#ffd149</color>
+    <!--<color name="colorAccent">#52acf7</color>-->
+
+    <color name="colorBackground">#d2d2d2</color>
+    <color name="colorBackgroundBorder">#e3e3e3</color>
+    <color name="colorBackgroundLightBlue">#eeeeee</color>
+    <color name="colorBackgroundGS">#cff0cb</color>
+    <color name="graylight">#bebebe</color>
+    <color name="gradian">#03c959</color>
+    <color name="colorInvoiceStatusInProgress">#94bbe4</color>
+    <color name="white">#ffffff</color>
+    <color name="startblue">#0ccbe5</color>
+    <color name="endblue">#4bb6ef</color>
+    <color name="colorInvoiceStatusPaid">#c6ecc6</color>
+    <color name="colorInvoiceStatusUnPaid">#ffcccc</color>
+    <color name="colorInvoiceStatusError">#6ea4ba</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorText">#007dff</color>
+    <color name="colorTextSolidText">#555555</color>
+    <!-- buttons e.g. save, cancel button -->
+    <color name="colorBtnText">#000000</color>
+    <color name="colorBtnBoarderGrey">#cccccc</color>
+    <color name="colorBtnBgWhite">#07a3f2</color>
+    <color name="colorBtnBoarderHover">#adadad</color>
+    <color name="colorBtnBgGrey">#adadad</color>
+    <color name="colorTextHeaderGS">#8a6d3b</color>
+    <color name="colorSubsStart">#EEAD92 </color>
+    <color name="colorSubEnd">#6018DC</color>
+    <color name="colorSignature">#0E355E</color>
+    <color name="darkColor">#b91a8137</color>
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
+
+</resources>

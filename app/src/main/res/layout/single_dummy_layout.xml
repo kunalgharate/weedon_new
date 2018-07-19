@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/date_single_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_gravity="end"
+    android:elevation="5dp"
+    app:cardBackgroundColor="@color/colorBtnBgWhite"
+    app:cardPreventCornerOverlap="true">
+
+</android.support.v7.widget.CardView>

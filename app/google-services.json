@@ -1,0 +1,123 @@
+{
+  "project_info": {
+    "project_number": "216836401709",
+    "firebase_url": "https://weedon-f87f4.firebaseio.com",
+    "project_id": "weedon-f87f4",
+    "storage_bucket": "weedon-f87f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216836401709:android:b79e4a75db812e5e",
+        "android_client_info": {
+          "package_name": "info.mores.weedonauthor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216836401709-sk58is1emd05k2o23dd5qpmppet78neo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "info.mores.weedonauthor",
+            "certificate_hash": "5f3f53f9b40059b4c9ebd505ac135e79c85d8eaa"
+          }
+        },
+        {
+          "client_id": "216836401709-hmg25n4fk13cl5k03eseuqb21g2s40fp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "info.mores.weedonauthor",
+            "certificate_hash": "e5b3869e69079950c301d6cbfbc1e1d371f65d8d"
+          }
+        },
+        {
+          "client_id": "216836401709-upsachjp01oaihqg8mackcbegmh85rl7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg3-JVt1HquZnorTsCiN4abiKhjlBrcus"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "216836401709-upsachjp01oaihqg8mackcbegmh85rl7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216836401709:android:e647f139b143556f",
+        "android_client_info": {
+          "package_name": "info.mores.weedon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216836401709-j894t4lr712mbk9uf14ugi13ndk8h5s1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "info.mores.weedon",
+            "certificate_hash": "5f3f53f9b40059b4c9ebd505ac135e79c85d8eaa"
+          }
+        },
+        {
+          "client_id": "216836401709-lpk1u938omijgvhnb77j33e6r7uaamko.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "info.mores.weedon",
+            "certificate_hash": "0c48f1833c90f6ee27b84b1cfe16845d7d826fcd"
+          }
+        },
+        {
+          "client_id": "216836401709-trv39grbccb2urrbduilj3jaa7v84ngn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "info.mores.weedon",
+            "certificate_hash": "e5b3869e69079950c301d6cbfbc1e1d371f65d8d"
+          }
+        },
+        {
+          "client_id": "216836401709-upsachjp01oaihqg8mackcbegmh85rl7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg3-JVt1HquZnorTsCiN4abiKhjlBrcus"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "216836401709-upsachjp01oaihqg8mackcbegmh85rl7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

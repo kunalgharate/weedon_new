@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/message_single_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="50dp"
+    android:layout_marginTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingStart="10dp"
+    android:weightSum="10">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rounded_corner"
+        android:orientation="vertical">
+
+
+        <info.mores.weedon.library.CoustomTextView
+            android:id="@+id/message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayout2"
+            android:layout_alignStart="@+id/linearLayout2"
+            android:layout_alignTop="@+id/linearLayout2"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner"
+            android:contentDescription="todo"
+            android:fontFamily="@font/nunito"
+            android:padding="5dp"
+            android:text="Message Text"
+            android:textColor="@color/colorBtnText"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <info.mores.weedon.library.CoustomTextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_gravity="right"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"
+            android:text="00:00"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

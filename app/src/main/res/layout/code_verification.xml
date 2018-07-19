@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/login_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.2"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/field_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/user_border"
+                android:drawableLeft="@drawable/user_image"
+                android:drawableStart="@drawable/user_image"
+                android:hint="Enter Name"
+                android:inputType="text"
+                android:padding="15dp"
+                android:theme="@style/ThemeOverlay.MyLightEditText" />
+
+
+            <EditText
+                android:id="@+id/field_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/user_border"
+                android:drawableLeft="@drawable/mob_image"
+                android:drawableStart="@drawable/mob_image"
+                android:focusable="true"
+                android:hint="@string/hint_phone_number"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="15dp"
+                android:theme="@style/ThemeOverlay.MyLightEditText" />
+
+            <TextView
+                android:id="@+id/tvConditions"
+                style="@style/ThemeOverlay.MyTextDetail"
+                android:layout_marginBottom="10dp"
+                android:background="@color/cardview_light_background"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/colorBtnBoarderHover" />
+
+            <Button
+                android:id="@+id/button_start_verification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rounded_btn"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:paddingLeft="60dp"
+                android:paddingRight="60dp"
+                android:text="Register"
+                android:theme="@style/ThemeOverlay.MyDarkButton" />
+
+            <TextView
+                android:id="@+id/status"
+                style="@style/ThemeOverlay.MyTextDetail"
+                android:text="@string/you_are_not_registered"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/colorInvoiceStatusInProgress" />
+
+           <!-- <TextView
+                android:id="@+id/wrong_number"
+                style="@style/ThemeOverlay.MyTextDetail"
+                android:text="Wrong Number ?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/colorSubEnd" />-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/detail"
+                    style="@style/ThemeOverlay.MyTextDetail"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    tools:text="Veriication Sucessfull" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detail"
+                    android:layout_centerHorizontal="true"
+                    android:padding="5dp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/phone_auth_fields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/EditverifyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:weightSum="2.0"
+            android:visibility="gone">
+
+
+            <EditText
+                android:id="@+id/field_verification_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:padding="15dp"
+                android:layout_margin="5dp"
+                android:hint="@string/hint_verification_code"
+                android:inputType="number"
+                android:background="@drawable/user_border"
+                android:drawableEnd="@drawable/mob_image"
+                android:theme="@style/ThemeOverlay.MyLightEditText"
+                android:drawableRight="@drawable/mob_image" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/verifyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <Button
+                android:id="@+id/button_verify_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/verify_phone_auth"
+                android:textAllCaps="false"
+                android:theme="@style/ThemeOverlay.MyDarkButton" />
+
+            <Button
+                android:id="@+id/button_resend"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/resend_phone_auth"
+                android:textAllCaps="false"
+                android:theme="@style/ThemeOverlay.MyDarkButton" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/signed_in_buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:visibility="gone"
+            android:weightSum="1.0">
+
+            <Button
+                android:id="@+id/sign_out_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="Sign Out"
+                android:theme="@style/ThemeOverlay.MyDarkButton" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
